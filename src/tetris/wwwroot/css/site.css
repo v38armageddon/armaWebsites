@@ -1,0 +1,73 @@
+@import url('../segoe-ui/Segoe Fluent Icons.ttf');
+@import url('../segoe-ui/Segoe UI.ttf');
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.fluent {
+    font-family: 'Segoe Fluent Icons'
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#cookieConsentdiv {
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 30px 20px 30px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+    #cookieConsentdiv button {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: 10px;
+        border: none;
+        background-color: green;
+        padding: 10px 50px;
+        margin-top: 0;
+        color: white;
+        transition: all ease 0.5s;
+    }
+
+        #cookieConsentdiv button:hover {
+            background-color: darkgreen;
+        }
+
+    #cookieConsentdiv h3 {
+        font-size: 22px;
+    }
+
+    #cookieConsentdiv p {
+        font-size: 13px;
+    }
+
+    #cookieConsentdiv a {
+        color: gray;
+        text-decoration: underline;
+    }

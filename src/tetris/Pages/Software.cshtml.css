@@ -1,0 +1,20 @@
+﻿/*Code from https://vincent-os.v38armageddon.net/pages/about.html */
+#software {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+#VOSApp #WebSM #MediaBrowser {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+#software img {
+    margin: 10px 30px;
+}

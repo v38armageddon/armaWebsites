@@ -1,0 +1,184 @@
+﻿@page
+@model tetris.Pages.SoftwareModel
+@{
+    ViewData["Title"] = "Software";
+}
+
+<body class="bg-black text-white">
+    <h1 style="display: flex; justify-content: center; align-items: center; height: 100vh;" class="text-center">Our Software</h1>
+
+    <div id="software">
+        <div id="VOSApp">
+            <div class="img">
+                <img src="~/img/Software/VOSApp.png" width="128px" alt="VOSApp logo" />
+            </div>
+            <p>
+                <strong>Vincent OS App</strong>
+            </p>
+            <p>
+                Vincent OS App is a small operating system that is designed to be simple and easy to use. <br />
+                It contains some pre-installed apps like a web browser, a file explorer, a calculator, <br />
+                a terminal and many more! This is the first software created by v38armageddon.
+            </p>
+            <p>
+                <b>Technology Used:</b> .NET, C#, Microsoft WebView2, WinForms, WPF
+            </p>
+            <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
+            <ms-store-badge productid="9PGNSPX24L00"
+                            cid="v38armageddon"
+                            theme="light"
+                            language="auto"
+                            animation="on">
+            </ms-store-badge>
+            <p><a href="https://github.com/v38armageddon/Vincent-OS-App">Source Code</a></p>
+        </div>
+        <div id="WebSM">
+            <div class="img">
+                <img src="~/img/Software/WebSM.png" width="128px" alt="WebSM logo" />
+            </div>
+            <p>
+                <strong>WebSM</strong>
+            </p>
+            <p>
+                WebSM is a minimalist browser based on Microsoft WebView2. <br />
+                It is a simple browser that is designed to be fast and easy to use. <br />
+                It is also designed to be a lightweight browser.
+            </p>
+            <p>
+                <b>Technology Used:</b> .NET, C#, Microsoft WebView2, UWP (WinUI 2)
+            </p>
+            <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
+            <ms-store-badge productid="9NVMBH7W0HXF"
+                            cid="v38armageddon"
+                            theme="light"
+                            language="auto"
+                            animation="on">
+            </ms-store-badge>
+            <p><a href="https://github.com/v38armageddon/WebSM">Source Code</a></p>
+        </div>
+        <div id="MediaBrowser">
+            <div class="img">
+                <img src="~/img/Software/MediaBrowser.png" width="128px" alt="MediaBrowser logo" />
+            </div>
+            <p>
+                <strong>MediaBrowser</strong>
+            </p>
+            <p>
+                MediaBrowser is a unofficial Windows Media Player like. <br />
+                It inclued a modern design with miniminalism. <br />
+                This is the first software that is available on Microsoft Store for Windows and Xbox.
+            </p>
+            <p>
+                <b>Technology Used:</b> .NET, C#, UWP (WinUI 2)
+            </p>
+            <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
+            <ms-store-badge productid="9PL4TWB5SLBQ"
+                            cid="v38armageddon"
+                            theme="light"
+                            language="auto"
+                            animation="on">
+            </ms-store-badge>
+            <p><a href="https://github.com/v38armageddon/MediaBrowser">Source Code</a></p>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <h2>Technology we used</h2>
+    <br />
+    <div id="tech">
+        <div id="dotnet">
+            <div class="img">
+                <img src="~/img/Software/Tech/dotnet.png" width="128px" alt="dotnet logo" />
+            </div>
+            <p>
+                <strong>.NET</strong>
+            </p>
+            <p>
+                .NET is a free, cross-platform, open source developer platform for building many different types of applications. <br />
+                With .NET, you can use multiple languages, editors, and libraries to build for web, mobile, desktop, gaming, and IoT.
+            </p>
+            <p><b>What we use for:</b></p>
+            <ul>
+                <li>ASP.NET Core</li>
+                <li>UWP (WinUI)</li>
+                <li>.NET MAUI</li>
+            </ul>
+            <p><a href="https://dotnet.microsoft.com/">Website</a></p>
+        </div>
+        <br /><br />
+        <div id="csharp">
+            <div class="img">
+                <img src="~/img/Software/Tech/csharp.png" width="128px" alt="CSharp logo" />
+            </div>
+            <p>
+                <strong>C#</strong>
+            </p>
+            <p>
+                C# is the programming language we use to create our software. <br />
+                It is a simple, modern, object-oriented, and type-safe programming language.
+            </p>
+            <p><b>What we use for:</b></p>
+            <ul>
+                <li>All .NET software</li>
+                <li>Some Libraries</li>
+                <li>Some console applications</li>
+            </ul>
+        </div>
+        <br /><br />
+        <div id="cpp">
+            <div class="img">
+                <img src="~/img/Software/Tech/cpp.png" width="128px" alt="CPP logo" />
+            </div>
+            <p>
+                <strong>C++</strong>
+            </p>
+            <p>
+                C++ is the programming language we use to create Vincent OS (normal version). <br />
+                This is a powerful language that is used to create many software.
+            </p>
+            <p><b>What we use for:</b></p>
+            <ul>
+                <li>Vincent OS</li>
+                <li>Libraries</li>
+                <li>Console applications</li>
+            </ul>
+        </div>
+        <div id="godot">
+            <div class="img">
+                <img src="~/img/Software/Tech/godot.png" width="128px" alt="Godot logo" />
+            </div>
+            <p>
+                <strong>Godot</strong>
+            </p>
+            <p>
+                Godot is a free and open-source game engine. <br />
+                It is a powerful game engine that is used to create many games.
+            </p>
+            <p><b>What we use for:</b></p>
+            <ul>
+                <li>Games</li>
+            </ul>
+            <p><a href="https://godotengine.org">Website</a></p>
+        </div>
+        <div id="powershell">
+            <div class="img">
+                <img src="~/img/Software/Tech/powershell.png" width="128px" alt="PowerShell logo" />
+            </div>
+            <p>
+                <strong>PowerShell</strong>
+            </p>
+            <p>
+                PowerShell is a very powerful command-line shell and scripting language. <br />
+                It is cross-platform and open-source.
+            </p>
+            <p><b>What we use for:</b></p>
+            <ul>
+                <li>Scripts</li>
+                <li>Commands</li>
+                <li>Some console applications</li>
+            </ul>
+            <p><a href="https://learn.microsoft.com/en-us/powershell/">Website</a></p>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,71 @@
+﻿@page
+@model tetris.Pages.WebSMModel
+@{
+    ViewData["Title"] = "WebSM";
+}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<style>
+    #os {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 50px 0px;
+    }
+
+    @@media only screen and (max-width: 600px) {
+        img {
+            width: 100%;
+        }
+    }
+</style>
+<body class="bg-black text-white">
+    <center>
+        <img src="/img/Software/WebSM.png" alt="WebSM logo"/>
+        <h2 class="text-center">WebSM</h2>
+        <br />
+        <p>A simply minimalist web browser.</p>
+        <br /><br /><br /><br />
+        <h3>Only essentials functionalities.</h3>
+        <img src="/img/Software/WebSM/WebSM home.png" style="width: 70%;" alt="Demo of WebSM on Windows"/>
+        <p>
+            WebSM is designed to be simple, only the essentials functionalities such as tabs, back, forward, refresh, home, and search are available. <br />
+        </p>
+        <br /><br /><br />
+    </center>
+    <h3>Unique features</h3>
+    <img src="/img/Software/WebSM/WebSM Sidebar.png" style="width: 50%" alt="WebSM Sidebar example"/>
+    <p>
+        Even if WebSM is minimalist, it has a unique feature, Siderbar. <br />
+        Sidebar allows you to access to another website without opening a new tab. <br />
+        It is useful if you want to listen to music, watch a video, or read a tutorial while browsing the web. <br />
+    </p>
+    <br />
+    <br />
+    <br />
+    <center>
+        <h3>Do you know WebSM is Open Source?</h3>
+        <p>
+            WebSM is Open Source, you can contribute to the project by adding new features, fixing bugs, or improving the code. <br />
+            You can see the project on GitHub. <br />
+            <a href="https://github.com/v38armageddon/WebSM">GitHub Project</a>
+        </p>
+        <br /><br />
+        <h3>Give it a try!</h3>
+        <div id="os">
+            <!--When done, uncomment the appropriate OS-->
+            @*<img src="/img/Software/VOSApp.png" width="20" height="20"/>*@
+            <i class="fab fa-windows"></i>
+            @*<i class="fab fa-linux"></i>
+            <i class="fab fa-android"></i>*@
+        </div>
+        <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
+        <ms-store-badge productid="9NVMBH7W0HXF"
+                        cid="WebSM-v38armageddon-page"
+                        theme="light"
+                        language="auto"
+                        animation="on">
+        </ms-store-badge>
+    </center>
+</body>
+

@@ -1,0 +1,60 @@
+﻿@page
+@model tetris.Pages.Game.DOTModel
+@{
+    ViewData["Title"] = "D.O.T";
+}
+
+<style>
+    html {
+        background-color: #000012;
+        position: relative;
+        min-height: 100%;
+    }
+
+    body {
+        background-color: #000012;
+    }
+
+    @@media only screen and (max-width: 600px) {
+        img {
+            width: 100%;
+        }
+
+        iframe {
+            width: 100%;
+        }
+    }
+
+    #imgBorder {
+        border: 10px solid #ffffff;
+    }
+</style>
+
+<body class="text-white">
+    <center>
+        <img src="/img/Game/DOT/banner.png" width="950" />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/B6zMDr227l8?si=JLP1N0h-pG2PZeXL" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplayw<x; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        <h2>D.O.T - Master puzzles, platform as a circle!</h2>
+        <img id="imgBorder" src="/img/Game/DOT/vlcsnap-2023-09-09-16h43m24s843.png" width="950" />
+        <br /><br />
+        <p>
+            In D.O.T, you take on the role of a circle navigating through a series of puzzles intertwined with platforming elements.
+            Embracing a classic graphic style featuring only two unique colors, D.O.T challenges your wit and reflexes as you maneuver through mind-bending puzzles in a minimalist yet captivating world.
+        </p>
+        <img id="imgBorder" src="/img/Game/DOT/vlcsnap-2023-09-09-16h43m55s862.png" width="950" alt="Screenshot of D.O.T"/>
+        <br /><br /><br /><br />
+        <img id="imgBorder" src="/img/Game/DOT/vlcsnap-2023-09-09-16h44m26s113.png" width="950" alt="Screenshot of D.O.T" />
+        <h2>
+            Soon, on Windows, Linux and Xbox One!
+        </h2>
+        <p>
+            D.O.T is currently in development and will be released on Microsoft Store (Windows and Xbox One) and itch.io (Windows, Linux).
+        </p>
+        <iframe frameborder="0" src="https://itch.io/embed/2191353?linkback=true&amp;bg_color=000012&amp;fg_color=ffffff&amp;link_color=46005d&amp;border_color=323244"
+                width="552" height="167">
+            <a href="https://v38armageddon.itch.io/dot">D.O.T by v38armageddon</a>
+        </iframe>
+    </center>
+</body>

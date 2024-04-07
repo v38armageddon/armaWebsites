@@ -1,0 +1,67 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<style>
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .column {
+        flex: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    @@media only screen and (max-width: 600px) {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    button {
+        background-color: #46005d;
+        border: none;
+        color: white;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+</style>
+
+<body class="bg-black text-white">
+    <img width="250vh" height="250vh" alt="v38armageddon Blog Logo" src="~/img/Index/Logo.png" />
+    <h1>New Webiste!</h1>
+    <br />
+    <button id="vBlog-button">Discover v38armageddon Blog!</button>
+    <br /><br />
+    <h2>Projects</h2>
+    <p>
+        We are the creators of Vincent OS, WebSM, MediaBrowser, D.O.T, and ArmaLand (and many other little projects you can found). <br />
+        We make simple, accessible software to assure that everyone can use it without issues. <br />
+        We also make games, sometimes. Whenever its from a third part game with a dedicated server or a complete game. <br />
+        Our goal? You have guessed right? (right?)
+    </p>
+    <br /><br />
+    <h2>Interessed in what we do? Join us!</h2>
+    <p>
+        We're looking for all new type of peoples who can contribute to our projects. <br />
+        So, whenever you are a developper, maintainer, contributor, graphic designer. <br />
+        Don't hesitate to contribute! You're welcome, no need to thanks.
+    </p>
+</body>
+
+<script>
+    document.getElementById("vBlog-button").onclick = function () {
+        location.href = "https://blog.v38armageddon.net/";
+    }
+</script>

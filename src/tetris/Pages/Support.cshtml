@@ -1,0 +1,108 @@
+﻿@page
+@model tetris.Pages.ContactModel
+@{
+    ViewData["Title"] = "Support";
+}
+
+<style>
+    button {
+        background-color: #46005d;
+        border: none;
+        color: white;
+    }
+    th {
+        margin-right: 20px;
+    }
+</style>
+
+<body class="bg-black text-white">
+    <h2 class="text-center">Support</h2>
+    <br /><br />
+    <center>
+        <h3>Choose a Project:</h3>
+        <br />
+        <table>
+            <thead>
+                <th>
+                    <img width="50" height="50" src="~/img/Software/VOSApp.png" alt="Vincent OS Project" />
+                    Vincent OS
+                </th>
+                <th>
+                    <img width="50" height="50" src="~/img/Software/WebSM.png" alt="WebSM Project" />
+                    WebSM
+                </th>
+                <th>
+                    <img width="50" height="50" src="~/img/Software/MediaBrowser.png" alt="MediaBrowser Project" />
+                    MediaBrowser
+                </th>
+                <th>
+                    <img width="50" height="50" src="~/img/Game/DOT/Logo.png" alt="D.O.T Project" />
+                    D.O.T
+                </th>
+                <th>
+                    <img width="50" height="50" src="~/img/Game/ArmaLand/Logo.png" alt="ArmaLand Project" />
+                    ArmaLand
+                </th>
+            </thead>
+            <tbody>
+                <td>
+                    <button id="vincent-os-button">Vincent OS</button>
+                </td>
+                <td>
+                    <button id="websm-button">WebSM</button>
+                </td>
+                <td>
+                    <button id="mediabrowser-button">MediaBrowser</button>
+                </td>
+                <td>
+                    <button id="dot-button">D.O.T</button>
+                </td>
+                <td>
+                    <button id="armaland-button">ArmaLand</button>
+                </td>
+            </tbody>
+        </table>
+    </center>
+    <br /><br /><br /><br />
+    <p>
+        Having a issue with our software? There is multiple methods to contact us for support:
+        <ul>
+            <li>If you prefer to have a direct support with the community, you can join our Discord server.</li>
+            <li>If you want to contact official support via mail, contact us at: <a href="mailto:contact@@v38armageddon.net">contact@@v38armageddon.net</a></li>
+        </ul>
+    </p>
+    <h3 class="text-center">Discord Server</h3>
+    <center>
+        <iframe src="https://discordapp.com/widget?id=1043074682775154788&theme=dark" width="350" height="500"
+                allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+        </iframe>
+    </center>
+</body>
+
+<script>
+    // Projects
+    // Vincent OS
+    document.querySelector('#vincent-os-button').addEventListener('click', function () {
+        window.open('https://vincent-os.v38armageddon.net/pages/support');
+    });
+
+    // WebSM
+    document.querySelector('#websm-button').addEventListener('click', function () {
+        window.open('https://github.com/v38armageddon/WebSM/issues');
+    });
+
+    // MediaBrowser
+    document.querySelector('#mediabrowser-button').addEventListener('click', function () {
+        window.open('https://github.com/v38armageddon/MediaBrowser/issues');
+    });
+
+    // D.O.T
+    document.querySelector('#dot-button').addEventListener('click', function () {
+        window.open('https://discord.gg/REnwTXQukR');
+    });
+
+    // ArmaLand
+    document.querySelector('#armaland-button').addEventListener('click', function () {
+        window.open('https://steamcommunity.com/groups/ArmaLand/discussions/1/');
+    });
+</script>
