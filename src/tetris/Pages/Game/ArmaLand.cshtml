@@ -30,21 +30,11 @@
                 <img width="50" src="~/img/Game/ArmaLand/Logo.png" alt="ArmaLand logo for the Classic Team Fortress 2 Server"/>
                 [Classic] Team Fortress 2
             </th>
-            <th>
-                <img width="50" src="~/img/Game/ArmaLand/Logo.png" alt="ArmaLand logo for the MvM Team Fortress 2 Server" />
-                [MvM] - Team Fortress 2
-            </th>
         </thead>
         <tbody>
             <td>
                 <br />
                 <button id="steam-connect-classic-button">Connect now!</button>
-                <br /> <br />
-                <button id="steam-group-button">Join the Steam Group!</button>
-            </td>
-            <td>
-                <br />
-                <button id="steam-connect-mvm-button">Connect now!</button>
                 <br /> <br />
                 <button id="steam-group-button">Join the Steam Group!</button>
             </td>
@@ -57,16 +47,6 @@
     // Classic TF2 Server
     document.querySelector('#steam-connect-classic-button').addEventListener('click', function () {
         var link = 'steam://connect/tf2-1-armaland.v38armageddon.net:27015';
-        if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
-            document.location.href = link;
-        } else {
-            window.location.href = link;
-        }
-    });
-
-    // MvM TF2 Server
-    document.querySelector('#steam-connect-mvm-button').addEventListener('click', function () {
-        var link = 'steam://connect/tf2-2-armaland.v38armageddon.net:27016';
         if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
             document.location.href = link;
         } else {
