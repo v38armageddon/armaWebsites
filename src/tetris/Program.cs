@@ -23,7 +23,6 @@ app.Urls.Add("https://localhost:7130"); // HTTPS localhost
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-app.UseCookiePolicy();
 app.UseRouting();
 
 // When the user navigate to another page, use the GC
