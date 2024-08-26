@@ -1,7 +1,11 @@
 @import url('../fonts/segoe-ui/Segoe Fluent Icons.ttf');
 @import url('../fonts/segoe-ui/Segoe UI.ttf');
 @import url('../fonts/avenir/stylesheet.css');
-@import url('../fonts/futura-lt/FuturaLT-BoldOblique.ttf');
+
+@font-face {
+    font-family: 'FuturaLT-BoldOblique';
+    src: url('../fonts/futura/FuturaLT-BoldOblique.ttf');
+}
 
 html {
     font-size: 14px;
@@ -28,7 +32,9 @@ body {
 }
 
 h1 {
-    font-family: 'FuturaLT-BoldOblique', Arial, sans-serif;
+    font-family: FuturaLT-BoldOblique, Arial, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
 }
 
 h2 {
