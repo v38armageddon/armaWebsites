@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\img\Software\WebSM\" />
-    <Folder Include="wwwroot\segoe-ui\" />
+    <Folder Include="wwwroot\fonts\segoe-ui\" />
   </ItemGroup>
 
   <ItemGroup>
