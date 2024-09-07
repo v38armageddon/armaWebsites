@@ -1,7 +1,7 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home";
 }
 
 <style>
@@ -9,7 +9,6 @@
         display: flex;
         flex-wrap: wrap;
     }
-
     .column {
         flex: 50%;
         justify-content: center;
@@ -18,14 +17,12 @@
         flex-direction: column;
         height: 100vh;
     }
-
     @@media only screen and (max-width: 600px) {
         img {
             width: 100%;
             height: auto;
         }
     }
-
     button {
         background-color: #46005d;
         border: none;
