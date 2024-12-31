@@ -9,11 +9,7 @@
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/tetris.styles.css" asp-append-version="true" />
-        <link rel="icon" href="~/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="~/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="~/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="~/favicon-16x16.png">
-        <link rel="manifest" href="~/site.webmanifest">
+        @Html.Partial("_Favicons")
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     </head>
     <body>
@@ -85,7 +81,7 @@
         <!--This is terrible implementation for Mobile, works on PC though-->
         <footer class="border-top footer bg-black text-muted">
             <div class="container">
-                &copy; 2022 - 2024 v38armageddon - All Right reserved - <a style="text-decoration: none;" asp-area="" asp-page="/Terms-Of-Service">Terms of service</a> - <a style="text-decoration: none;" asp-area="" asp-page="/Privacy">Privacy</a>
+                &copy; 2022 - 2025 v38armageddon - All Right reserved - <a style="text-decoration: none;" asp-area="" asp-page="/Terms-Of-Service">Terms of service</a> - <a style="text-decoration: none;" asp-area="" asp-page="/Privacy">Privacy</a>
             </div>
         </footer>
 
