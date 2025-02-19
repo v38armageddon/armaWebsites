@@ -18,8 +18,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.Urls.Add("http://localhost:5218"); // HTTP localhost
-app.Urls.Add("https://localhost:7130"); // HTTPS localhost
+app.Urls.Add("http://0.0.0.0:5218"); // HTTP localhost
+app.Urls.Add("https://0.0.0.0:7130"); // HTTPS localhost
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
@@ -34,7 +34,5 @@ app.Use((context, next) =>
 });
 
 app.UseAuthorization();
-
 app.MapRazorPages();
-
 app.Run();
