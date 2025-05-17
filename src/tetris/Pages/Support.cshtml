@@ -3,7 +3,9 @@
 @{
     ViewData["Title"] = "Support";
 }
-
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
 <style>
     button {
         background-color: #46005d;
@@ -13,73 +15,144 @@
     th {
         margin-right: 20px;
     }
+
+    /* Style tab links */
+    .tablink {
+        background-color: #000000;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
+    }
+
+        .tablink:hover {
+            background-color: #777;
+        }
+
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+        color: white;
+        display: none;
+        padding: 100px 20px;
+        height: 100%;
+    }
+
+    #ProjectsSupport,#ServicesSupport {
+        background-color: #000000;
+    }
 </style>
 
 <body class="bg-black text-white">
+    <!--TODO: Rewrite this piece of shit of this page-->
     <h1 class="text-center">Support</h1>
     <br /><br />
     <center>
-        <h2>Choose a Project:</h2>
-        <br />
-        <table>
-            <thead>
-                <th>
-                    <img width="50" height="50" src="~/img/Software/VOSApp.png" alt="The Vincent OS logo that represent a V with a O mixed and a green leaf" />
-                    Vincent OS
-                </th>
-                <th>
-                    <img width="50" height="50" src="~/img/Software/WebSM.png" alt="The WebSM logo that represent a blue cloud with WiFi signal" />
-                    WebSM
-                </th>
-                <th>
-                    <img width="50" height="50" src="~/img/Software/MediaBrowser.png" alt="The MediaBrowser logo that represent a white TV with a blue greyish dark background" />
-                    MediaBrowser
-                </th>
-                <th>
-                    <img width="50" height="50" src="~/img/Game/DOT/Logo.png" alt="The D.O.T logo with a full white circle and a blue dark background" />
-                    D.O.T
-                </th>
-                <th>
-                    <img width="50" height="50" src="~/img/Game/ArmaLand/Logo.png" alt="ArmaLand Project" />
-                    ArmaLand
-                </th>
-            </thead>
-            <tbody>
-                <td>
-                    <button id="vincent-os-button">Vincent OS</button>
-                </td>
-                <td>
-                    <button id="websm-button">WebSM</button>
-                </td>
-                <td>
-                    <button id="mediabrowser-button">MediaBrowser</button>
-                </td>
-                <td>
-                    <button id="dot-button">D.O.T</button>
-                </td>
-                <td>
-                    <button id="armaland-button">ArmaLand</button>
-                </td>
-            </tbody>
-        </table>
-    </center>
-    <br /><br /><br /><br />
-    <p>
-        Having a issue with our software? There is multiple methods to contact us for support:
-        <ul>
-            <li>If you prefer to have a direct support with the community, you can join our Discord server.</li>
-            <li>If you want to contact official support via mail, contact us at: <a href="mailto:contact@@v38armageddon.net">contact@@v38armageddon.net</a></li>
-        </ul>
-    </p>
-    <h2 class="text-center">Discord Server</h2>
-    <center>
-        <iframe src="https://discordapp.com/widget?id=1043074682775154788&theme=dark" width="350" height="500"
-                allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
-        </iframe>
+        <p>
+            Having a issue with our software? There is multiple methods to contact us for support:
+        </p>
+
+        <button class="tablink" onclick="openPage('ProjectsSupport', this, '#46005d')">Projects Support</button>
+        <button class="tablink" onclick="openPage('ServicesSupport', this, '#46005d')" id="defaultOpen">Services Support</button>
+        <button class="tablink" onclick="openPage('OtherSupport', this, '#46005d')" id="defaultOpen">Other Support</button>
+        <div id="ProjectsSupport" class="tabcontent">
+            <table>
+                <thead>
+                    <th>
+                        <img width="50" height="50" src="~/img/Software/VOSApp.png" alt="The Vincent OS logo that represent a V with a O mixed and a green leaf" />
+                        Vincent OS
+                    </th>
+                    <th>
+                        <img width="50" height="50" src="~/img/Software/WebSM.png" alt="The WebSM logo that represent a blue cloud with WiFi signal" />
+                        WebSM
+                    </th>
+                    <th>
+                        <img width="50" height="50" src="~/img/Software/MediaBrowser.png" alt="The MediaBrowser logo that represent a white TV with a blue greyish dark background" />
+                        MediaBrowser
+                    </th>
+                    <th>
+                        <img width="50" height="50" src="~/img/Game/DOT/Logo.png" alt="The D.O.T logo with a full white circle and a blue dark background" />
+                        D.O.T
+                    </th>
+                </thead>
+                <tbody>
+                    <td>
+                        <button id="vincent-os-button">Vincent OS</button>
+                    </td>
+                    <td>
+                        <button id="websm-button">WebSM</button>
+                    </td>
+                    <td>
+                        <button id="mediabrowser-button">MediaBrowser</button>
+                    </td>
+                    <td>
+                        <button id="dot-button">D.O.T</button>
+                    </td>
+                </tbody>
+            </table>
+        </div>
+        <div id="ServicesSupport" class="tabcontent">
+            <table>
+                <thead>
+                    <th>
+                        <img width="50" height="50" src="~/img/Game/ArmaLand/Logo.png" alt="ArmaLand Project" />
+                        ArmaLand
+                    </th>
+                </thead>
+                <tbody>
+                    <td>
+                        <button id="armaland-button">ArmaLand</button>
+                    </td>
+                </tbody>
+            </table>
+        </div>
+        <div id="OtherSupport" class="tabcontent">
+            <h2>Reddit</h2>
+            <a href="https://reddit.com/r/v38armageddon" title="Go to the Subreddit" id="logo" data-hveid="8" class="fab fa-reddit"></a>
+            <p>
+                If you prefer to use Reddit to expose your problem, you can join the subreddit r/v38armageddon.
+            </p>
+            <br>
+            <h2>Discord</h2>
+            <a href="https://discord.gg/REnwTXQukR" title="Go to the Discord server" id="logo" data-hveid="8" class="fab fa-discord"></a>
+            <p>
+                You can also join the Discord Server to have help of the community members.
+            </p>
+            <br>
+            <h2>E-mail</h2>
+            <a href="mailto:contact@v38armageddon.net" title="Send a mail" id="logo" data-hveid="8" class="fas fa-envelope"></a>
+            <p>
+                If you prefer, you can send a mail to us at: contact@v38armageddon.net 
+            </p>
+        </div>
     </center>
 </body>
 
 <script>
+    function openPage(pageName, elmnt, color) {
+        // Hide all elements with class="tabcontent" by default */
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        // Remove the background color of all tablinks/buttons
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        // Show the specific tab content
+        document.getElementById(pageName).style.display = "block";
+        // Add the specific color to the button used to open the tab content
+        elmnt.style.backgroundColor = color;
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    
     // Projects
     // Vincent OS
     document.querySelector('#vincent-os-button').addEventListener('click', function () {
