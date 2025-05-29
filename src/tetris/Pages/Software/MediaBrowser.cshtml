@@ -5,10 +5,14 @@
 }
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="~/css/MediaBrowser.css"/>
+<link rel="stylesheet" href="~/css/MediaBrowser.css" />
 
 <body class="text-white">
-    <img class="text-center" class="logo" src="/img/Software/MediaBrowser.png" alt="MediaBrowser logo" />
+    <!--Use this center thing because image refuse to put in center using CSS.-->
+    <!--I don't know why there are deprecating this-->
+    <center>
+        <img class="text-center logo" src="/img/Software/MediaBrowser.png" alt="The MediaBrowser logo representing by a TV" />
+    </center>
     <h1 class="text-center">
         MediaBrowser
     </h1>
@@ -16,7 +20,48 @@
         A modern version of Windows Media Browser.
     </h2>
     <p class="text-center">
-        MediaBrowser is a modern "Windows Media Center" like, you can view your pictures, listening to your music and watch videos. <br />
+        MediaBrowser is a modern "Windows Media Center" like, you can view your pictures, listening to your music and watch videos.
     </p>
-    <h2>This page is under construction!</h2>
+    <img class="img-thumbnail" style="border-radius: 0px !important;" src="/img/Software/MediaBrowser/PrincipalView.png" alt="The principal menu of MediaBrowser when launched."/>
+    <br /><br />
+    <h3 class="text-center">View your pictures!</h3>
+    <p class="text-center">
+        Rediscover your photo collection through a clean, intuitive interface.
+    </p>
+    <img class="img-thumbnail" style="border-radius: 0px !important;" src="/img/Software/MediaBrowser/ImageView.png" alt="A picture of the Vincent OS Desktop viewed on MediaBrowser."/>
+    <br /><br />
+    <h3 class="text-center">Listen to your music!</h3>
+    <p class="text-center">
+        Enjoy your albums and tracks in a distraction-free interface. <br />
+        Whether you're relaxing or focused, MediaBrowser provides the perfect listening experience.
+    </p>
+    <center>
+        <img class="img-thumbnail" style="border-radius: 0px !important;" src="/img/Software/MediaBrowser/MusicView.png" alt="A picture of a music played on MediaBrowser." />
+    </center>
+    <br /><br />
+    <h3 class="text-center">Watch your favorite videos!</h3>
+    <p class ="text-center">
+        From series to movies, MediaBrowser is built to deliver a smooth and immersive viewing experience. <br />
+        Quick access, responsive controls, and clean design. <br />
+        Everything you need to enjoy your videos!
+    </p>
+    <img class="img-thumbnail" style="border-radius: 0px !important;" src="/img/Software/MediaBrowser/VideoView.png" alt="A picture of a video with the Tardis from the mod Dalek Mod on Minecraft on MediaBrowser." />
+    <br /><br />
+    <p class="text-center">
+        MediaBrowser is Open Source under the license: <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL-3</a>. <br />
+        You can find the source code on <a href="https://github.com/v38armageddon/MediaBrowser">GitHub</a>.
+    </p>
+    <h2 class="text-center">Available on PC (Windows only) and Xbox One!</h2>
+    <center>
+        <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
+        <ms-store-badge productid="9pl4twb5slbq"
+                        cid="MediaBrowser-v38armageddon-page"
+                        productname="MediaBrowser"
+                        window-mode="direct"
+                        theme="light"
+                        size="large"
+                        language="fr"
+                        animation="on">
+        </ms-store-badge>
+    </center>
 </body>

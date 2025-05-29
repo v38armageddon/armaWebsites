@@ -4,36 +4,27 @@
     ViewData["Title"] = "About";
 }
 
-<style>
-    @@media only screen and (max-width: 600px) {
-        img {
-            width: 100%;
-        }
-    }
-</style>
+<link rel="stylesheet" href="~/css/About.css" />
 
 <body class="bg-black text-white">
     <h1>About v38armageddon</h1>
-    <p>We are v38armageddon, a small team of developers who want to make the software more accessible to everyone.</p>
-    <br />
-    <h2>Our history</h2>
     <p>
-        The history started in 2016 who Florian. M (founder of v38armageddon), wants to make a operating system. He created: Vincent OS. A application who simulate his operating system.
-        <br />
-        He started building his community with his YouTube channel and Discord server.
-        <br />
-        In 2020, he and his community decided to create a really new operating system, the goal are this operating system was free for everyone and easy to use by everyone.
-        <br />
-        In 2022, the website: <a href="https://vincent-os.v38armageddon.net">vincent-os.v38armageddon.net</a> was created. This website was the first website of v38armageddon.
-        <br />
-        In the same year, v38armageddon aquired a licence for publishing apps in the Microsoft Store for Windows and Xbox. The first Windows application after Vincent OS App is: WebSM.
-        <br />
-        In 2023, the domain name has been changed to: v38armageddon.net.
-        <br />
-        In the same year, a new game has developped: D.O.T, a platformer-puzzle game. There is also a new game server: ArmaLand, a Team Fortress 2 server.
+        We are v38armageddon, a small team of developers who want to make the software more accessible to everyone.
     </p>
     <br />
-    <br />
+    <h2>Our history</h2>
+    <div class="timeline">
+        @foreach (var evt in Model.TimelineEvents)
+        {
+            var sideClass = evt.Side == "left" ? "TimeLineLeft" : "TimeLineRight";
+            <div class="ctTimeline @sideClass">
+                <div class="conTimeline">
+                    <h2>@evt.Year</h2>
+                    <p>@Html.Raw(evt.Description)</p>
+                </div>
+            </div>
+        }
+    </div>
     <h2>Our values</h2>
     <p>At v38armageddon, we have values that enable us to meet everyone's requirements.</p>
     <center>

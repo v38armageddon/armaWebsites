@@ -4,36 +4,7 @@
     ViewData["Title"] = "Home";
 }
 
-<style>
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .column {
-        flex: 50%;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-    }
-    @@media only screen and (max-width: 600px) {
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
-    button {
-        background-color: #46005d;
-        border: none;
-        color: white;
-    }
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-</style>
+<link rel="stylesheet" href="/css/Index.css" />
 
 <body class="bg-black text-white">
     <img width="250vh" height="250vh" alt="v38armageddon Blog Logo" src="~/img/Game/DOT/Logo.png" />
@@ -63,8 +34,4 @@
     </p>
 </body>
 
-<script>
-    document.getElementById("DOTSteam-button").onclick = function () {
-        location.href = "https://store.steampowered.com/app/3357970/DOT/";
-    }
-</script>
+<script src="/js/Index.js"></script>

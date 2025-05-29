@@ -4,14 +4,7 @@
     ViewData["Title"] = "ArmaLand";
 }
 
-<style>
-    button
-    {
-        background-color: #46005d;
-        border: none;
-        color: white;
-    }
-</style>
+<link rel="stylesheet" href="/css/ArmaLand.css"/>
 
 <body class="bg-black text-white">
     <center>
@@ -42,20 +35,4 @@
     </table>
 </body>
 
-<script>
-    // Servers
-    // Classic TF2 Server
-    document.querySelector('#steam-connect-classic-button').addEventListener('click', function () {
-        var link = 'steam://connect/tf2-1-armaland.v38armageddon.net:27015';
-        if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
-            document.location.href = link;
-        } else {
-            window.location.href = link;
-        }
-    });
-
-    // Steam Group
-    document.querySelector('#steam-group-button').addEventListener('click', function () {
-        window.open('https://steamcommunity.com/groups/ArmaLand');
-    });
-</script>
+<script src="~/js/ArmaLand.js"></script>
