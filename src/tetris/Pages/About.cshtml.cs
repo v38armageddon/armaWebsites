@@ -58,7 +58,7 @@ namespace tetris.Pages
                 new TimelineEvent
                 {
                     Year = "2025",
-                    Description = "On 2025-05-22, the Demo version of D.O.T has been released, giving you a first taste of the game.",
+                    Description = "On 2025-05-22, the Demo version of D.O.T has been released, giving you a first taste of the game. On 2025-07-05, Vincent OS 1.0 was released in Open Beta, after 9 years of developments, it was worth the wait no?",
                     Side = "left"
                 }
             };
