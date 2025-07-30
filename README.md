@@ -3,6 +3,7 @@ This is a collection of websites used by v38armageddon to run.
 
 It contains the following websites:
 - [v38armageddon Main Website](https://www.v38armageddon.net)
+- [v38armageddon Blog](https://blog.v38armageddon.net)
 
 If you want to search for the Vincent OS website, or, v38armageddon Docs, you can find them here:
 - [Vincent OS Website](https://github.com/Vincent-OS/website)
@@ -22,4 +23,4 @@ dotnet build 'v38armageddon Website.sln'
 ```
 
 ## Contribute
-armaWebsites is open to all contributions ! You can read more in the CONTRIBUTE file.
+armaWebsites is open to all contributions! You can read more in the CONTRIBUTE file.

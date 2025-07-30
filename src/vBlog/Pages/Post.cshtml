@@ -1,0 +1,10 @@
+﻿@page "{slug}"
+@model vBlog.Pages.PostModel
+@{
+    ViewData["Title"] = Model.PostTitle;
+}
+<link rel="stylesheet" href="/css/Post.css" />
+
+<body class="bg-black text-white">
+    @Html.Raw(Model.PostContent)
+</body>
