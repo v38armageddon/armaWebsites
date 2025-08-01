@@ -23,7 +23,8 @@ namespace vBlog.Pages
                 {
                     PostTitle = titleLine.TrimStart().Substring(2).Trim();
                 }
-                PostContent = Markdown.ToHtml(markdownContent);
+                var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
+                PostContent = Markdown.ToHtml(markdownContent, pipeline);
             }
             else
             {

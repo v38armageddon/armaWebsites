@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\img\2025\half-a-year-of-updates\" />
   </ItemGroup>
 
 </Project>
