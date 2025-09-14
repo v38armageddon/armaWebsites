@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\img\2025\half-a-year-of-updates\" />
+    <Folder Include="wwwroot\img\2025\evolution-of-vincent-os-1.0-open-beta\" />
   </ItemGroup>
 
 </Project>

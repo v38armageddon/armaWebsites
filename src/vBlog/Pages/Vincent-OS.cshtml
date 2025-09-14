@@ -6,6 +6,15 @@
 
 <body class="bg-black text-white">
     <h1>Vincent OS Category</h1>
-    <p>Nothing to see here, for the moment...</p>
+    @foreach (var post in Model.Posts)
+    {
+        if (!string.IsNullOrEmpty(post.ImageUrl))
+        {
+            <img class="img-thumbnail" src="@post.ImageUrl" alt="Thumbnail of the article: @post.Title" />
+        }
+        <h2>
+            <a href="@post.Url">@post.Title</a>
+        </h2>
+        <p>By v38armageddon - @post.Date.ToString("yyyy-MM-dd")</p>
+    }
 </body>
-    
