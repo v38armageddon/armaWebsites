@@ -3,6 +3,12 @@ using System.Collections.Generic;
 
 namespace tetris.Pages
 {
+    /// <summary>
+    /// This list the events for the timeline on the About page.
+    /// But this is a poor way to store text to display (look at this montrosity).
+    /// We need to move this to a XML file like we did in vBlog project.
+    /// The 2025-12-09 will be the last modification date of this file until we move to XML.
+    /// </summary>
     public class TimelineEvent
     {
         public required string Year { get; set; }
@@ -67,9 +73,10 @@ namespace tetris.Pages
                     Year = "2025",
                     Description = "On 2025-05-22, the Demo version of D.O.T has been released, giving you a first taste of the game." + 
                     "On 2025-07-05, Vincent OS 1.0 was released in Open Beta, after 9 years of developments, it was worth the wait no? " +
-                    "The 2025-07-18, our first game: D.O.T, has been released on Steam and itch.io.",
+                    "The 2025-07-18, our first game: D.O.T, has been released on Steam and itch.io. " +
+                    "The first stable version of Vincent OS 1.1 is released on 2025-11-22. Making a big milestone for v38armageddon development!",
                     Side = "left"
-                }
+                },
             };
         }
     }

@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="tetris/tetris.csproj" />
+  <Project Path="vBlog/vBlog.csproj" />
+</Solution>
