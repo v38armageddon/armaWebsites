@@ -2,52 +2,75 @@
 @model tetris.Pages.WebSMModel
 @{
     ViewData["Title"] = "WebSM";
+
+    var version = "v6.0"; // TODO: Replace this by an GET request to the GitHub API to get the latest version of WebSM
+    var downloadBase = "https://github.com/v38armageddon/WebSM/releases/download/";
+    var apkUrl = $"{downloadBase}{version}/net.v38armageddon.WebSM-Signed.apk";
 }
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="~/css/WebSM.css"/>
 
 <body>
     <center>
-        <img class="logo" src="/img/Software/WebSM.png" alt="WebSM logo"/>
+        <img class="logo" src="/img/Software/WebSM.webp" alt="WebSM logo"/>
         <h1 class="text-center">WebSM</h1>
         <br />
         <h2>A simply minimalist web browser.</h2>
-        <br /><br /><br /><br />
+        <br /><br />
         <h3>Only essentials functionalities.</h3>
-        <img src="/img/Software/WebSM/WebSM home.png" style="width: 70%;" alt="Demo of WebSM on Windows"/>
+        <img class="img-thumbnail" src="/img/Software/WebSM/WebSM home.webp" style="width: 70%;" alt="Demo of WebSM on Windows" />
         <p>
             WebSM is designed to be simple, only the essentials functionalities such as tabs, back, forward, refresh, home, and search are available. <br />
         </p>
-        <br /><br /><br />
+        <br /><br />
         <h3>Unique features</h3>
-        <img src="/img/Software/WebSM/WebSM Sidebar.png" style="width: 50%" alt="WebSM Sidebar example" />
+        <img class="img-thumbnail" src="/img/Software/WebSM/WebSM Sidebar.webp" style="width: 50%;" alt="WebSM Sidebar example" />
         <p>
             Even if WebSM is minimalist, it has a unique feature, Siderbar. <br />
             Sidebar allows you to access to another website without opening a new tab. <br />
             It is useful if you want to listen to music, watch a video, or read a tutorial while browsing the web. <br />
         </p>
-        <br /> <br /> <br />
+        <br /> <br />
+        <h3>Cross-Platform, on your favorite OS!</h3>
+        <img class="img-thumbnail" src="/img/Software/WebSM/WebSM Vincent OS.webp" style="width: 50%;" alt="WebSM on Vincent OS"/>
+        <img class="img-thumbnail" src="/img/Software/WebSM/WebSM Android.webp" style="width: 50%;" alt="WebSM on Android"/>
+        <p>
+            WebSM is available on Windows but also on Vincent OS, Linux and Android. <br/>
+            One unique UI, one code, multiples places to consult the web whenever you are! <br />
+        </p>
         <h3>Do you know WebSM is Open Source?</h3>
         <p>
             WebSM is Open Source, you can contribute to the project by adding new features, fixing bugs, or improving the code. <br />
-            You can see the project on <a href="https://github.com/v38armageddon/WebSM">GitHub</a>. <br />
+            You can see the project on <a href="https://github.com/v38armageddon/WebSM" style="color: #1da1dc;">GitHub</a>. <br />
         </p>
         <br /><br /> <br />
-        <h3>Give it a try!</h3>
+        <h2>Give it a try!</h2>
         <div id="os">
-            <!--When done, uncomment the appropriate OS-->
-            @*<img src="/img/Software/VOSApp.png" width="20" height="20"/>*@
-            <i class="fab fa-windows"></i>
-            @*<i class="fab fa-linux"></i>
-            <i class="fab fa-android"></i>*@
+            <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
+            <ms-store-badge productid="9NVMBH7W0HXF"
+                            cid="WebSM-v38armageddon-page"
+                            theme="dark"
+                            language="auto"
+                            animation="on">
+            </ms-store-badge>
+            <br />
+            <button class="linux-download">
+                <p class="fab fa-linux"></p>
+                <a href="https://docs.v38armageddon.net/software/websm/websm-versions.html#other-distributions">
+                    Linux
+                </a>
+            </button>
+            <br />
+            <button class="vincent-os-download">
+                <img src="/img/Software/VOSApp.webp" alt="The Vincent OS logo" />
+                <a href="https://docs.v38armageddon.net/software/websm/websm-versions.html#vincent-os">Vincent OS</a>
+            </button>
+            <br />
+            <button class="android-download">
+                <p class="fab fa-android"></p>
+                <a href="@apkUrl">Android</a>
+            </button>
         </div>
-        <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
-        <ms-store-badge productid="9NVMBH7W0HXF"
-                        cid="WebSM-v38armageddon-page"
-                        theme="dark"
-                        language="auto"
-                        animation="on">
-        </ms-store-badge>
     </center>
 </body>
 
